@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* google -- fonts */
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+/* universal ------- desgine */
+a{
+    text-decoration: none;
+}
+body{
+    /* background-color: rgba(0, 0, 0, 0.925); */
+    background-color: black;
+
+}
+/* menu-desgine */
+
+.top-banner{
+    color:white;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* width: 100vw; */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(../images/banner-img-1.png);
+    background-position:center center ;
+    /* display: flex;
+    justify-content:space-around; */
+
+
+}
+nav { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);    
+} 
+.hamberger{
+    display: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin-right: 2em;
+    font-size: 18px;
+}
+li a{
+    color: white;
+    font-family: 'Qahiri', sans-serif;
+    font-weight: 700;
+
+}
+.logos a{
+    margin-right:2em ;
+    color: orange;
+}
+.top-heading-container{
+    position: relative;
+    top: 20%;
+    /* margin-bottom: 250px; */
+    justify-content: center;
+}
+.top-heading{
+    text-align: center;
+}
+.top-heading h1{
+    font-size: 5em;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+.top-heading p{
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+
+}
+ .top-heading a{ 
+    background-color: orange;
+    padding:1em 3em;
+    color: white;
+    font-weight: 700;
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+}
+.feature-section{
+    display: flex;
+margin-top: 20px;
+    justify-content: space-between;
+}
+.feature{
+    background-color: darkorange;
+    width: 320px;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+/* .feature:hover{
+    transform: ;
+} */
+.feature img{
+    width: 90px;
+
+}
+.feature-3 img{
+    width: 100px;
+}
+/* .special-feature img{
+    width: 16%;
+
+}
+.feature-3 img{
+    width: 120%;
+}
+.feature-4 img{
+    width: 100%;
+} */
+/* catagory section desgine */
+.marketting-section{
+    display: grid;
+    grid-template-columns: 360px 711px 417px;
+    margin-top: 50px;
+    column-gap: 14px;
+}
+.marketing{
+    border: 2px solid gold;
+}
+#marketting-1{
+    background-image: url(../images/banner-helloween-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 356px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5em;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+#marketting-2{
+    
+    background-image: url(../images/banner-helloween-05.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 356px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#marketting-2 h1{
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1.5em;
+}
+
+#marketting-2 ul{
+    display: grid;
+    list-style-type: disc;
+    
+    grid-template-columns: repeat(2,1fr);
+}
+#marketting-3{
+    background-image: url(../images/banner-helloween-02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 356px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+/* Popular product section desgine */
+.popular-product-main-heading, .buy-now-banner-descri h1,.about-us-descrip h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3em;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.prdc-1{
+    position: relative;
+}
+.sale{
+    position: absolute;
+    padding: 0 1em;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: darkorange;
+}
+.sale2{
+    color: white;
+    font-weight: 700;
+    margin-top: 5px ;
+    padding: 3px 6px;
+    background-color: darkorange;
+    display: none;
+}
+.popular-product-container{
+    background-image: url(../images/second-bg-foxic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: white;
+    font-weight: 700;
+}
+
+    /* .popular-product-container a{
+    display: block;
+} */
+.popular-products{
+    margin-top: 8em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sub-popolar-product{
+    display: none;
+}
+.popular-prdc-descri{
+    text-align: center;
+}
+.product:hover .sale{
+ display: none;
+
+}
+.product:hover .popular-prdc-descri p{
+    display: none;
+}
+.product:hover .sub-popolar-product{
+    display: block;
+}
+.product:hover .popoular-product{
+    display: none;
+}
+.product:hover .sale2{
+    display: inline-block;
+}
+/* Buy------------------NOW -------------------------------Banner */
+.buy-now-banner{
+    background-image: url(../images/third-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 537px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buy-now-banner-descri{
+    width: 430px;
+    text-align: center;
+}
+.buy-now-banner-descri p,.about-us-descrip p{
+    font-size: 1.3em;
+    margin: 30px;
+    color: white;
+}
+.buy-now-banner-descri a,.about-us-descrip a{ 
+    padding: 1em 2em;
+    border: 1px solid white;
+    color: lightcyan;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.buy-now-banner-descri a:hover{
+    background-color: black;
+    color: white;
+}
+/* about----------------------------------us------------------------------------------section */
+.about-us-bannaer{
+    background: url(../images/fourth-banner.png);
+    background-size: cover;
+    height: 632px;
+    background-position: right center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-us-descrip{
+    width: 430px;
+    text-align: center;;
+}
+.about-us-descrip a{
+    background-color: orange;
+}
+.about-us-descrip a:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #304352 0%, #d7d2cc  51%, #304352  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+@media only screen and (max-width:680px) { 
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        /* align-items: center; */
+        /* align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap; */
+        background-color: rgba(0, 0, 0, 0.514)   
+    }
+    .hamberger{
+        display: block;
+    }
+    
+    .top-banner-img{
+        width: 100px;
+    }
+    nav:hover ul{
+        display: block;
+    }
+    nav:hover .logos a{
+        margin-right: 5px;
+    }
+        
+    ul{
+        flex-direction: column;
+        align-items: center;
+        height: 140px;
+        justify-content: space-around;
+        display: none;
+    }
+    .hamberger:hover + ul{
+    display: block;        
+        
+    }
+    ul li{
+        margin: 0;
+    }
+    .logos a{
+        /* margin-top: 5px; */
+        margin-right: 0px ;
+    }
+    
+    .top-banner{
+       color: green;
+       background-position: right top;
+
+    }
+    .feature-section{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .feature{
+        margin-bottom: 20px;
+    }
+    .marketting-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .marketing{
+        margin-bottom: 20px;
+    }
+    .popular-product-container{
+    }
+    .popular-products{
+       flex-direction: column;
+    }
+    .product{
+        margin-bottom: 1.5rem;
+    }
+    .product img{
+        width: 100%;
+    }
+    /* nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+    .buy-now-banner{
+    }
+    .buy-now-banner-descri h1{
+        font-size: 1.5rem;
+
+    }
+    .about-us-bannaer{
+    }
+
+}
